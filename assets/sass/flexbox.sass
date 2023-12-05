@@ -1,0 +1,23 @@
+// Define variables
+$primary-color: #333
+$secondary-color: #777
+$padding: 10px
+
+// Mixin for flex container
+@mixin flex-container
+  display: flex
+  justify-content: space-between
+  padding: $padding
+
+// Main container
+.main-container
+  @include flex-container
+  background-color: $primary-color
+
+  // Nested items
+  .item
+    flex: 1
+    margin: 5px
+    background-color: $secondary-color
+    &:hover
+      background-color: darken($secondary-color, 10%)
