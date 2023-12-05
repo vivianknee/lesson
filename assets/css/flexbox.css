@@ -6,6 +6,10 @@
   .main-container .item {
     flex: 1;
     margin: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #777; }
     .main-container .item:hover {
       background-color: #5e5e5e; }
